@@ -1,6 +1,8 @@
 export const aboutData = {
     title: "Who I am",
-    description1: "My name's Jane. I'm a web designer and developer based in Southampton, UK.",
-    description2: "During the day I work as a lead developer at a local agency and in the evening I  work on freelance projects and utilize the time to built my own products. I spent my leisure hours writing articles and poetry. Right now I'm also trying a hand at machine learning and AI. I love to learn and explore new arenas.",
-    image: 2
-}
+    description1: "Hi, I’m Akshai — a cybersecurity enthusiast, web developer, and Odoo developer from Kerala, India.",
+    description2: "I’m a cybersecurity student and co-founder of Two Dots, a startup where we design and develop websites for clients. When I’m not studying, I enjoy experimenting with new tech and expanding my skills in web development and cybersecurity.",
+    description3: `Beyond coding, I'm a storyteller—through photography, videography. I also run a freelancing page where I design websites and market products like <a href="https://www.instagram.com/cookinggrandma_/" target="_blank" rel="noopener noreferrer">Cooking Grandma</a>.<br /><br />
+    You can also check out my work on <a href="https://www.instagram.com/twodotsofficial_/" target="_blank" rel="noopener noreferrer">Two Dots Official</a>.`,
+    image: 1
+};

@@ -144,6 +144,8 @@
     align-items: center;
     justify-content: flex-start;
     width: 100%;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     margin-bottom: 2.5rem;
 }
 
