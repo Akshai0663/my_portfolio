@@ -1,21 +1,21 @@
 import React, { useContext, useState } from 'react';
 import { Snackbar, IconButton, SnackbarContent } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
-import axios from 'axios';
+// import axios from 'axios';
 import isEmail from 'validator/lib/isEmail';
 import { makeStyles } from '@material-ui/core/styles';
 import {
     FaTwitter,
     FaLinkedinIn,
     FaGithub,
-    FaYoutube,
-    FaBloggerB,
-    FaRedditAlien,
-    FaStackOverflow,
-    FaCodepen,
-    FaInstagram,
-    FaGitlab,
-    FaMediumM,
+    // FaYoutube,
+    // FaBloggerB,
+    // FaRedditAlien,
+    // FaStackOverflow,
+    // FaCodepen,
+    // FaInstagram,
+    // FaGitlab,
+    // FaMediumM,
 } from 'react-icons/fa';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
@@ -130,35 +130,33 @@ function Contacts() {
     const classes = useStyles();
 
     const handleContactForm = (e) => {
-        e.preventDefault();
+    e.preventDefault();
 
-        if (name && email && message) {
-            if (isEmail(email)) {
-                const responseData = {
-                    name: name,
-                    email: email,
-                    message: message,
-                };
+    if (name && email && message) {
+        if (isEmail(email)) {
+            const phoneNumber = "+918129336728"; // 🔹 Your WhatsApp number (with country code, no +)
+            const text = `Hello, I am ${name} (${email}).\n\n${message}`;
+            const encodedText = encodeURIComponent(text);
 
-                axios.post(contactsData.sheetAPI, responseData).then((res) => {
-                    console.log('success');
-                    setSuccess(true);
-                    setErrMsg('');
+            // Open WhatsApp (works on both mobile & desktop)
+            window.open(`https://wa.me/${phoneNumber}?text=${encodedText}`, "_blank");
 
-                    setName('');
-                    setEmail('');
-                    setMessage('');
-                    setOpen(false);
-                });
-            } else {
-                setErrMsg('Invalid email');
-                setOpen(true);
-            }
+            setSuccess(true);
+            setErrMsg('');
+            setName('');
+            setEmail('');
+            setMessage('');
+            setOpen(false);
         } else {
-            setErrMsg('Enter all the fields');
+            setErrMsg('Invalid email');
             setOpen(true);
         }
-    };
+    } else {
+        setErrMsg('Enter all the fields');
+        setOpen(true);
+    }
+};
+
 
     return (
         <div
@@ -343,7 +341,7 @@ function Contacts() {
                                     <FaLinkedinIn aria-label='LinkedIn' />
                                 </a>
                             )}
-                            {socialsData.instagram && (
+                            {/* {socialsData.instagram && (
                                 <a
                                     href={socialsData.instagram}
                                     target='_blank'
@@ -422,7 +420,7 @@ function Contacts() {
                                 >
                                     <FaGitlab aria-label='GitLab' />
                                 </a>
-                            )}
+                            )} */}
                         </div>
                     </div>
                 </div>

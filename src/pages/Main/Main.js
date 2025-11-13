@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import Navbar from '../../components/Navbar/Navbar'
-import Footer from '../../components/Footer/Footer'
+// import Footer from '../../components/Footer/Footer'
 import Landing from '../../components/Landing/Landing'
 import About from '../../components/About/About'
 import Education from '../../components/Education/Education'
@@ -36,7 +36,7 @@ function Main() {
             {/* <Testimonials /> */}
             {/* <Blog /> */}
             <Contacts />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

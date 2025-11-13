@@ -12,8 +12,8 @@ import {
     FaTwitter,
     FaLinkedin,
     FaGithub,
-    FaYoutube,
-    FaBlogger,
+    // FaYoutube,
+    // FaBlogger,
 } from 'react-icons/fa';
 
 function Landing() {
@@ -120,11 +120,11 @@ function Landing() {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaYoutube
+                                {/* <FaYoutube
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='YouTube'
-                                />
+                                /> */}
                             </a>
                         )}
                         {socialsData.blogger && (
@@ -133,11 +133,11 @@ function Landing() {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaBlogger
+                                {/* <FaBlogger
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='Blogger'
-                                />
+                                /> */}
                             </a>
                         )}
                     </div>

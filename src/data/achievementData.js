@@ -7,7 +7,7 @@ export const achievementData = {
             details : 'Validate your cybersecurity skills and expertise to grow your career in digital defense and protection.',
             date : 'Aug 20, 2019',
             field : 'CyberSecurity',
-            image : 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+            image : 'https://www.sdsolutionsllc.com/wp-content/uploads/2025/09/0x0-1024x576.webp'
         },
         {
             id : 2,
@@ -15,7 +15,7 @@ export const achievementData = {
             details : 'Learn to build and deploy full-stack applications using MongoDB, Express, React, and Node.js.',
             date : '10-feb-2025 ',
             field : 'MERN Stack',
-            image : 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFFbBIpSGIUYf2uSUU8UFh1d7s0p4Srt6pirSLMAHy2A9LGSW3_WiLNqkej6qVJaMASIIiPH4hBbxZd0CaMQpfpsErDw-EMemzh1Z--UlNkvaNEiWhHHpRMZVMY6AY4HP88agYKFKdmqLWggTgZXAMpnQallV_QgbXESoI_h-B0NmXtB-jbXcAPSrKLg/s720/web%20development%20course.jpeg'
+            image : 'https://jaro-website.s3.ap-south-1.amazonaws.com/2024/03/Features-of-Mern-stack-development-services-You-Should-Know-768x397-1.png'
         },
     ]
 }
